@@ -24,5 +24,32 @@ ${Browser}    chrome
     Input Text    id=end_year    2018 
     ##กดปุ่มคำนวณหาผลลัพธ์
     Click Element    id=calculate
+   
+    #แสดงวันเริ่มต้นและวันสิ้นสุด
+    Wait Until Page Contains    Monday, 7 March 1977 
+    Wait Until Page Contains    Thursday, 21 June 2018
+
     ##แสดงจำนวนผลลัพธ์ระหว่างวันที่เริ่มต้นและวันที่สิ้นสุด
     Wait Until Page Contains    15,082 days
+
+    #แสดงวินาที
+    Wait Until Page Contains    1,303,084,800 seconds
+
+    #แสดงนาที
+    Wait Until Page Contains    21,718,080 minutes
+
+    #แสดงชั่วโมง
+    Wait Until Page Contains    361,968 hours
+
+    
+
+
+    
+    
+    
+
+
+
+
+
+
