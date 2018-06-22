@@ -3,7 +3,7 @@ $(function () {
 })
 
 function GetApi() {
-    var host = "http://localhost:3000/CalculateDurationBetweenTwoDate"
+    var host = "http://localhost:3000/CalculationDurationBetweenTwoDate"
     var parameter = `?start_day=${$('#start_day').val()}` +
         `&start_month=${$('#start_month').val()}` +
         `&start_year=${$('#start_year').val()}` +

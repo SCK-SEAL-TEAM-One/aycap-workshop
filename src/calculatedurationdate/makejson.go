@@ -3,7 +3,7 @@ package calculatedurationdate
 import "fmt"
 
 type Duration struct {
-	From    string `json:"form"`
+	From    string `json:"from"`
 	To      string `json:"to"`
 	Days    string `json:"days"`
 	Seconds string `json:"seconds"`
@@ -16,14 +16,14 @@ func MakeJson(startDay, startMonth, startYear, endDay, endMonth, endYear int) Du
 	hours := TransformDaysToHour(totalDay)
 	minutes := TransformHoursToMinutes(hours)
 	seconds := TransformMinutesToSeconds(minutes)
-	secondsResult := fmt.Sprintf("%s %s", AddComma(int64(seconds)), "Seconds")
+	secondsResult := fmt.Sprintf("%s %s", AddComma(int64(seconds)), "seconds")
 
 	return Duration{
 		From:    TransformDateToFullDate(startDay, startMonth, startYear),
 		To:      TransformDateToFullDate(endDay, endMonth, endYear),
-		Days:    fmt.Sprintf(" %s %s", AddComma(totalDay), "Days"),
+		Days:    fmt.Sprintf("%s %s", AddComma(int64(totalDay)), "days"),
 		Seconds: secondsResult,
-		Minutes: fmt.Sprintf(" %s %s", AddComma(minutes), "Minutes"),
-		Hours:   fmt.Sprintf("%s %s", AddComma(hours), "Hours"),
+		Minutes: fmt.Sprintf("%s %s", AddComma(minutes), "minutes"),
+		Hours:   fmt.Sprintf("%s %s", AddComma(hours), "hours"),
 	}
 }

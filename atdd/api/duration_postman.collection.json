@@ -117,7 +117,7 @@
 							"",
 							"pm.test(\"Seconds\", function () {",
 							"    var duration = pm.response.json();",
-							"    pm.expect(duration.seconds).to.eql(\"927,763,800 seconds\");",
+							"    pm.expect(duration.seconds).to.eql(\"927,763,200 seconds\");",
 							"});",
 							"",
 							"pm.test(\"Minutes\", function () {",
