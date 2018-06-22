@@ -13,8 +13,8 @@ func ReverseNumber(number string) string {
 	return string(reverse)
 }
 
-func AddComma(number int) string {
-	numberString := strconv.Itoa(number)
+func AddComma(number int64) string {
+	numberString := strconv.FormatInt(number, 10)
 	var buffer bytes.Buffer
 	reverseNumbers := ReverseNumber(numberString)
 	count := 0

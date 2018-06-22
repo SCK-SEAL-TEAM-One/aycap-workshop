@@ -3,7 +3,7 @@ package calculatedurationdate
 import "testing"
 
 func Test_AddComma_Input_1000_should_be_1_comma_000(t *testing.T) {
-	number := 100000
+	number := int64(100000)
 	expected := "100,000"
 
 	actual := AddComma(number)

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"api"
 	"log"
 	"net/http"
 )
@@ -8,7 +9,7 @@ import (
 func main() {
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/web/", http.StripPrefix("/web/", fs))
-	http.HandleFunc("/CalculateDurationBetweenTwoDate", api.ApiCalculateDate)
+	http.HandleFunc("/CalculationDurationBetweenTwoDate", api.ApiCalculateDate)
 
 	log.Println("Listening...")
 	http.ListenAndServe(":3000", nil)
