@@ -17,5 +17,6 @@ func ApiCalculateDate(responseWriter http.ResponseWriter, request *http.Request)
 	endYear, _ := strconv.Atoi(queryString.Get("end_year"))
 
 	durationResponse, _ := json.Marshal(calculatedurationdate.MakeJson(startDay, startMonth, startYear, endDay, endMonth, endYear))
+
 	responseWriter.Write(durationResponse)
 }
