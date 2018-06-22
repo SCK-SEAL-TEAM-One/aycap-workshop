@@ -12,7 +12,7 @@ type Duration struct {
 }
 
 func MakeJson(startDay, startMonth, startYear, endDay, endMonth, endYear int) Duration {
-	totalDay := CalculeteTotalDay(startDay, startMonth, startYear, endDay, endMonth, endYear)
+	totalDay := CalculateTotalDayResult(startDay, startMonth, startYear, endDay, endMonth, endYear)
 	hours := TransformDaysToHour(totalDay)
 	minutes := TransformDayToMinutes(hours)
 	seconds := TransformMinutesToSeconds(minutes)
