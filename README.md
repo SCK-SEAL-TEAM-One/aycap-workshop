@@ -97,12 +97,6 @@ HOUR, MINUTE
 durationDate
 ```
 
-### เขียนคำสั่ง run Acceptance test 
-```
-newman run filename
-```
-
-
 ### ข้อตกลง commit message ใน github
 `[Created]: สร้างไฟล์ใหม่`
 
@@ -114,8 +108,13 @@ newman run filename
 
 * ให้เขียนรายละเอียดด้วยว่าแก้ไขอะไรและทำที่ตรงไหน
 
-#คำสั่ง Run Test
+# คำสั่ง Run Test
 ## ค่าสั่ง Run Test Robot
 ```
 robot duration.robot
+```
+
+### เขียนคำสั่ง run Acceptance test 
+```
+newman run filename
 ```
