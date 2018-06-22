@@ -1,18 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculate Duration Between Two Dates</title>
-
 </head>
 
 <body>
-  <h1>Test CalculateDate</h1>
+  <h3>Calculate Duration Between Two Dates</h3>
+  <span>Start Date: </span>
+  <input id="start_day" type="text">
+  <span>/</span>
+  <input id="start_month" type="text">
+  <span>/</span>
+  <input id="start_year" type="text">
+  <hr>
 
+  <span>End Date: </span>
+  <input id="end_day" type="text">
+  <span>/</span>
+  <input id="end_month" type="text">
+  <span>/</span>
+  <input id="end_year" type="text">
+  <hr>
+
+  <button id="calculate" name="calculate">Calculate Duration</button>
+  <hr>
+
+  <div>
+    <span>From and including: </span>
+    <div id="FromAndIncluding"></div>
+    <br/>
+    <span>To and including: </span>
+    <div id="ToAndIncluding"></div>
+    <br/>
+    <span>Result: </span>
+    <div id="Result">15,082 days</div>
+    <br/>
+    <span>Seconds: </span>
+    <div id="Seconds"></div>
+    <br/>
+    <span>Minutes: </span>
+    <div id="Minutes"></div>
+    <br/>
+    <span>Hours: </span>
+    <div id="Hours"></div>
+    <br/>
+    <span>Weeks and days: </span>
+    <div id="WeeksAndDays"></div>
+    <br/>
+  </div>
 </body>
 
+<script src="js/calculatedurationbetweentwodate.js"></script>
 
 </html>
