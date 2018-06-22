@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "182096b3-d02c-4683-94f1-027f8c193668",
+		"name": "duration_postman.collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "input_startDate_7_3_1977_and_endDate_21_6_2018",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "564c4d0c-dfb9-4936-9ca7-0f30133a7a28",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"From and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.from).to.eql(\"Monday, 7 March 1977\");",
+							"});",
+							"",
+							"pm.test(\"To and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.to).to.eql(\"Thursday, 21 June 2018\");",
+							"});",
+							"",
+							"pm.test(\"Result\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.days).to.eql(\"15,082 days\");",
+							"});",
+							"",
+							"pm.test(\"Seconds\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.seconds).to.eql(\"1,303,084,800 seconds\");",
+							"});",
+							"",
+							"pm.test(\"Minutes\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.minutes).to.eql(\"21,718,080 minutes\");",
+							"});",
+							"",
+							"pm.test(\"Hours\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.hours).to.eql(\"361,968 hours\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/CalculationDurationBetweenTwoDate?start_day=7&start_month=3&start_year=1977&end_day=21&end_month=6&end_year=2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"CalculationDurationBetweenTwoDate"
+					],
+					"query": [
+						{
+							"key": "start_day",
+							"value": "7"
+						},
+						{
+							"key": "start_month",
+							"value": "3"
+						},
+						{
+							"key": "start_year",
+							"value": "1977"
+						},
+						{
+							"key": "end_day",
+							"value": "21"
+						},
+						{
+							"key": "end_month",
+							"value": "6"
+						},
+						{
+							"key": "end_year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "input_startDate_27_1_1989_and_endDate_21_6_2018",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a1903bf-b884-40a4-92f8-0aa90e58f76e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"From and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.from).to.eql(\"Friday, 27 January 1989\");",
+							"});",
+							"",
+							"pm.test(\"To and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.to).to.eql(\"Thursday, 21 June 2018\");",
+							"});",
+							"",
+							"pm.test(\"Result\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.days).to.eql(\"10,738 days\");",
+							"});",
+							"",
+							"pm.test(\"Seconds\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.seconds).to.eql(\"927,763,800 seconds\");",
+							"});",
+							"",
+							"pm.test(\"Minutes\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.minutes).to.eql(\"15,462,720 minutes\");",
+							"});",
+							"",
+							"pm.test(\"Hours\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.hours).to.eql(\"257,712 hours\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/CalculationDurationBetweenTwoDate?start_day=27&start_month=1&start_year=1989&end_day=21&end_month=6&end_year=2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"CalculationDurationBetweenTwoDate"
+					],
+					"query": [
+						{
+							"key": "start_day",
+							"value": "27"
+						},
+						{
+							"key": "start_month",
+							"value": "1"
+						},
+						{
+							"key": "start_year",
+							"value": "1989"
+						},
+						{
+							"key": "end_day",
+							"value": "21"
+						},
+						{
+							"key": "end_month",
+							"value": "6"
+						},
+						{
+							"key": "end_year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "input_startDate_20_8_1986_and_endDate_21_6_2018",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b178ece-e59d-43f8-b9c5-f302761ed1fa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"From and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.from).to.eql(\"Wednesday, 20 August 1986\");",
+							"});",
+							"",
+							"pm.test(\"To and including\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.to).to.eql(\"Thursday, 21 June 2018\");",
+							"});",
+							"",
+							"pm.test(\"Result\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.days).to.eql(\"11,629 days\");",
+							"});",
+							"",
+							"pm.test(\"Seconds\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.seconds).to.eql(\"1,004,745,600 seconds\");",
+							"});",
+							"",
+							"pm.test(\"Minutes\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.minutes).to.eql(\"16,745,760 minutes\");",
+							"});",
+							"",
+							"pm.test(\"Hours\", function () {",
+							"    var duration = pm.response.json();",
+							"    pm.expect(duration.hours).to.eql(\"279,096 hours\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/CalculationDurationBetweenTwoDate?start_day=20&start_month=8&start_year=1986&end_day=21&end_month=6&end_year=2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"CalculationDurationBetweenTwoDate"
+					],
+					"query": [
+						{
+							"key": "start_day",
+							"value": "20"
+						},
+						{
+							"key": "start_month",
+							"value": "8"
+						},
+						{
+							"key": "start_year",
+							"value": "1986"
+						},
+						{
+							"key": "end_day",
+							"value": "21"
+						},
+						{
+							"key": "end_month",
+							"value": "6"
+						},
+						{
+							"key": "end_year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
