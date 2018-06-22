@@ -6,3 +6,4 @@ atdd/ui/*.html
 atdd/ui/*.xml
 *.html
 *.png
+.robot~HEAD
